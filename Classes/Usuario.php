@@ -26,8 +26,7 @@ class Usuario
     }
     public function UmUsuario($codigo)
     {
-       // $sql = "SELECT codigo,nome,email,login FROM usuario WHERE
-      //  codigo = :codigo;";
+
         $sql = "SELECT codigo,nome,email,login FROM usuario WHERE
         codigo = :codigo;";
         $q = $this->conexao->prepare($sql);

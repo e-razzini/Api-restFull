@@ -55,7 +55,7 @@ if      ($method == "GET")
 else if ($method == "POST") 
    { 
         
-    //inserindo ususarios    
+    //inserindo usuarios    
     $usuario = json_decode($body);
     $usu = new Usuario();    
     $usu->inserir($usuario->nome, $usuario->email, $usuario->login, $usuario->senha);
