@@ -65,9 +65,9 @@ else if ($method == "PUT")
    {
   //update
   $usu = new Usuario();
-  if(isset($param['codigo'])){
+  if(isset($param->codigo)){
     $usuario =json_decode($body);            
-    $usu->editar($param['codigo'],$usuario->nome, $usuario->email, $usuario->login, $usuario->senha);        
+    $usu->editar($param->codigo,$usuario->nome, $usuario->email, $usuario->login, $usuario->senha);        
     echo json_encode($usu);
   }
  } 
